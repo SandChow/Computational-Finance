@@ -3,3 +3,7 @@
 delta
 
 vega
+
+rho
+
+theta
