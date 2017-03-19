@@ -10,6 +10,7 @@ fsig <- bsc(50, 0.5, 0.0, 45, 0.06, sigmas, 0.02) - 7
 
 print("")
 print("Using brute-force:")
+
 bsc(50, 0.5, 0.0, 45, 0.06, 0.25, 0.02) - 7
 
 fsig <- function(sigma)
@@ -31,6 +32,7 @@ bisection <- function(f, a, b, epsilon=0.001)
 
 print("")
 print("Using bisection:")
+
 bsc(50, 0.5, 0.0, 45, 0.06, bisection(fsig, 0.1, 0.3), 0.02) - 7
 
 # derivative of bsc with respect to σ
@@ -56,4 +58,5 @@ while (u / x > epsilon)
 
 print("")
 print("Using newton:")
+
 fsig(x) 
