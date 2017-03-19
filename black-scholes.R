@@ -7,6 +7,7 @@ bsc <- function(S, T, t, K, r, s, q)
 
 sigmas <- seq(0.05, 0.5, by=0.01)
 fsig <- bsc(50, 0.5, 0.0, 45, 0.06, sigmas, 0.02) - 7
+
 print("")
 print("Using brute-force:")
 bsc(50, 0.5, 0.0, 45, 0.06, 0.25, 0.02) - 7
